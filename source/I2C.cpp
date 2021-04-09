@@ -19,11 +19,11 @@
 #include "drivers/DigitalInOut.h"
 #include "platform/mbed_wait_api.h"
 
-#if DEVICE_I2C
+// #if DEVICE_I2C
 
-#if DEVICE_I2C_ASYNCH
-#include "platform/mbed_power_mgmt.h"
-#endif
+// #if DEVICE_I2C_ASYNCH
+// #include "platform/mbed_power_mgmt.h"
+// #endif
 
 namespace mbed {
 
@@ -204,7 +204,7 @@ int I2C::recover(PinName sda, PinName scl)
     return 0;
 }
 
-#if DEVICE_I2C_ASYNCH
+// #if DEVICE_I2C_ASYNCH
 
 int I2C::transfer(int address, const char *tx_buffer, int tx_length, char *rx_buffer, int rx_length, const event_callback_t &callback, int event, bool repeated)
 {

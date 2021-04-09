@@ -16,7 +16,7 @@
  */
 #include "drivers/I2CSlave.h"
 
-#if DEVICE_I2CSLAVE
+// #if DEVICE_I2CSLAVE
 
 namespace mbed {
 
